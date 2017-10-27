@@ -3,9 +3,9 @@
 #include <signal.h>
 #include <thread>
 
-#include "gen/right.ascii.h"
-#include "gen/left.ascii.h"
-#include "gen/middle.ascii.h"
+#include "right.ascii.h"
+#include "left.ascii.h"
+#include "middle.ascii.h"
 
 void my_handler(int s) {
 	exit(1);

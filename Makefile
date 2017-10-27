@@ -1,7 +1,7 @@
 ASSETS := $(addsuffix .ascii.h, $(basename $(addprefix gen/, $(notdir $(wildcard assets/*.png)))))
 
-all: gen $(ASSETS) lol.cpp
-	$(CXX) lol.cpp -o lol
+all: gen $(ASSETS) src/lol.cpp
+	$(CXX) -O3 -Wall -Igen src/lol.cpp -o lol
 
 gen:
 	mkdir -p gen
