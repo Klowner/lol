@@ -1,0 +1,1 @@
+requirements: ponysay and xxd
