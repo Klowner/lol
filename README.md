@@ -1,1 +1,3 @@
-requirements: ponysay and xxd
+build requirements: `ponysay` and `xxd`
+
+to build: run `make`
