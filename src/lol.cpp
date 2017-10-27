@@ -29,10 +29,9 @@ int main (int argc, char** argv)
 
 	for (int i = 0 ;; i++)
 	{
-		std::cout << "\033[2J";
-		std::cout << frames[i % 4] << std::endl;
-		std::this_thread::sleep_for(std::chrono::milliseconds(200));
-
+		std::cout << "\033[2J\n";
+		std::cout << frames[i % 4] << "\n";
+		std::this_thread::sleep_for(std::chrono::milliseconds(100));
 	}
 
 	return 0;
